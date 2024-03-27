@@ -15,6 +15,14 @@ PGMReader::PGMReader(const std::string& imagePath)
     }
 }
 
+PGMReader::~PGMReader()
+{
+	if (imageFile.is_open())
+	{
+		imageFile.close();
+	}
+}
+
 void PGMReader::loadImageData()
 {
     std::string line;

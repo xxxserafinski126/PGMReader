@@ -12,6 +12,7 @@ class PGMReader : public ImageReader
 {
 public:
     PGMReader(const std::string& imagePath);
+    ~PGMReader();
     void printImageInfo() override;
     void printMostFrequentColor() override;
     int calcualteNumberOfUniqueColors() override;
