@@ -16,7 +16,7 @@ PGMReader::PGMReader(const std::string& imagePath)
     }
     else
     {
-        std::cerr << "Nie udalo sie otworzyc pliku  " << imagePath << std::endl;
+        std::cerr << "Blad pliku  " << imagePath << std::endl;
     }
 }
 
