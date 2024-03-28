@@ -1,13 +1,18 @@
 #include "PGMReader.hpp"
-#include <set>
+
 
 PGMReader::PGMReader(const std::string& imagePath)
 {
     imageFile.open(imagePath, std::ios::in);
     if (imageFile.is_open())
     {
+	    
         name = imagePath;
+	    
         loadImageData();
+
+	imageFile.close();
+	    
     }
     else
     {
