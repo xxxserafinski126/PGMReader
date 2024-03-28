@@ -16,7 +16,7 @@ PGMReader::PGMReader(const std::string& imagePath)
     }
     else
     {
-        std::cerr << "Nie udalo sie otworzyc pliku " << imagePath << std::endl;
+        std::cerr << "Nie udalo sie otworzyc pliku  " << imagePath << std::endl;
     }
 }
 
@@ -62,6 +62,7 @@ void PGMReader::printImageInfo()
 {
     std::cout << "Nazwa pliku: " << name << std::endl;
     std::cout << "Rozmiar obrazu: " << width << "x" << height << std::endl;
+    std::cout << "Ilosc Pixeli: " << width * height << std::endl;
     std::cout << "Maksymalna wartosc koloru: " << maxColorValue << std::endl;
     std::cout << "Ilosc unikalnych kolorow: " << calcualteNumberOfUniqueColors() << std::endl;
     auto mostFrequent = getMostFrequentColor();
