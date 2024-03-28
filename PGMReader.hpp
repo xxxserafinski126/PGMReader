@@ -15,7 +15,7 @@ public:
     ~PGMReader();
     void printImageInfo() override;
     void printMostFrequentColor() override;
-    int calcualteNumberOfUniqueColors() override;
+    int calcualteNumberOfUniqueColors() override; //w calculate jest literówka, ale zostawiłem tak jak było na githubie
 
 private:
     std::fstream imageFile;
