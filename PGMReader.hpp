@@ -12,9 +12,9 @@ class PGMReader : public ImageReader
 {
 public:
     PGMReader(const std::string& imagePath);
-    ~PGMReader();
-    void printImageInfo() override;
-    void printMostFrequentColor() override;
+    ~PGMReader(); //destruktor upewniający się czy plik jest zamknięty
+    void printImageInfo() override; //metoda wypisująca informacje o pliku pgm
+    void printMostFrequentColor() override; //metoda wypisująca najczęściej występujący kolor
     int calcualteNumberOfUniqueColors() override; //w calculate jest literówka, ale zostawiłem tak jak było na githubie
 
 private:
